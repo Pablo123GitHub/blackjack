@@ -20,6 +20,20 @@ describe Card do
         expect(@card).to respond_to(:show)
     end 
 
+    it "'show' method is true at the start" do    
+        expect(@card.show).to eq(true)
+    end 
+
+    it "'suit' method returns Diamonds" do    
+        expect(@card.suit).to eq("Diamonds")
+    end 
+
+    it "'rank' method returns '8'" do   
+        expect(@card.rank).to eq("8")
+    end 
+
+    
+
 
 
     
