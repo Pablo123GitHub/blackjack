@@ -9,6 +9,13 @@ class Card
         is_valid_suit_and_rank(suit, rank)
     end 
 
+    def show_suit_rank
+        if show
+        "#{rank} of #{suit}"
+        else   
+            ""
+        end 
+    end 
 
     private 
 
